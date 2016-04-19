@@ -3,11 +3,11 @@ buildscript {
         grailsVersion = project.grailsVersion
     }
     repositories {
-mavenLocal()
-maven {
-url "http://localhost:8081/nexus/content/groups/public/"
-}
-}
+        mavenLocal()
+            maven {
+                    url "http://localhost:8081/nexus/content/groups/public/"
+            }
+    }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.5.0"

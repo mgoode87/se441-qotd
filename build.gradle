@@ -73,3 +73,20 @@ assets {
     minifyJs = true
     minifyCss = true
 }
+
+uploadArchives {
+repositories {
+mavenDeployer {
+repository(
+url: "${nexusUrl}/content/repositories/releases") {
+authentication(userName: nexusUsername,
+password: nexusPassword)
+}
+snapshotRepository(
+url: "${nexusUrl}/content/repositories/snapshots") {
+authentication(userName: nexusUsername,
+password: nexusPassword)
+}
+}
+}
+}

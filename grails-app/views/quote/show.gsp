@@ -19,7 +19,19 @@
             <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
             </g:if>
-            <f:display bean="quote" />
+            <ol class="property-list quote">
+              <li class="fieldcontain">
+                <span id="text-label" class="property-label">Text</span>
+                <div class="property-value"
+                ,→ aria-labelledby="text-label">${this.quote?.text}</div>
+              </li>
+              <feature:enabled feature="ShowAttributions">
+              <li class="fieldcontain">
+                <span id="attribution-label" class="property-label">Attribution</span>
+                <div class="property-value" aria-labelledby="attribution-label"></div>
+              </li>
+            </feature:enabled>
+          </ol>
             <g:form resource="${this.quote}" method="DELETE">
                 <fieldset class="buttons">
                     <g:link class="edit" action="edit" resource="${this.quote}"><g:message code="default.button.edit.label" default="Edit" /></g:link>

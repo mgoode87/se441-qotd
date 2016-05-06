@@ -27,7 +27,20 @@
             </g:hasErrors>
             <g:form action="save">
                 <fieldset class="form">
-                    <f:all bean="quote"/>
+                  <div class=’fieldcontain required’>
+                    <label for=’text’>Text<span class=’required-indicator’>*</span></label>
+                    id="text" />
+                    <input type="text" name="text" value="" required="" id="text" />
+                  </div>
+                  <feature:enabled feature="ShowAttributions">
+                    <div class=’fieldcontain’>
+                      <label for=’attribution’>Attribution</label>
+                      <select name="attribution.id" id="attribution" >
+                        <option value="null"></option>
+                        <option value="1" >qotd.Attribution : 1</option>
+                      </select>
+                    </div>
+                  </feature:enabled>
                 </fieldset>
                 <fieldset class="buttons">
                     <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />

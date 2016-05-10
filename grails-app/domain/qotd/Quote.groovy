@@ -3,8 +3,8 @@ package qotd
 class Quote {
     String text;
 
-    static belongsTo = [attribution:Attribution];
-    
+    static belongsTo = [attribution:attribution];
+
     //Made a change
 
     static constraints = {

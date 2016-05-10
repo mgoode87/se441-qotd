@@ -10,8 +10,8 @@ class AttributionControllerSpec extends Specification {
     def populateValidParams(params) {
         assert params != null
 
-        
-        params["name"] = 'Mike'
+
+        params["name"] = ’Anonymous’
 
         assert false, "TODO: Provide a populateValidParams() implementation for this generated test suite"
     }

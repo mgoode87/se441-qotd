@@ -14,7 +14,7 @@ class QuoteControllerSpec extends Specification {
         //params["name"] = 'someValidName'
 
 
-        params["text"] = ’My Shot’
+        params["text"] = ’Some memorable words...’
 
         assert false, "TODO: Provide a populateValidParams() implementation for this generated test suite"
     }

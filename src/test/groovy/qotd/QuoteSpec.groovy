@@ -28,7 +28,7 @@ class QuoteSpec extends Specification {
         !n.validate()
 
         when: 'test is valid text'
-        def l = new Quote(text: 'My Shot')
+        def l = new Quote(text: ’Some memorable words...’)
         then: 'validate should pass'
         !l.validate()
     }

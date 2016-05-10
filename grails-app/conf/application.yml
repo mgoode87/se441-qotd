@@ -51,6 +51,9 @@ environments:
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
 
 ---
+features:
+    ShowAttributions:
+        enabled: false
 ---
 grails:
     profile: web

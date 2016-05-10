@@ -27,7 +27,7 @@ class AttributionSpec extends Specification {
         !n.validate()
 
         when: ’name is valid’
-        def l = new Attribution(name: ’Anonymous’)
+        def l = new Attribution(name: 'Anonymous')
         then: ’validation should pass’
         !l.validate()
 

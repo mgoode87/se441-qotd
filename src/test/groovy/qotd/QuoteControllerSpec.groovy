@@ -8,15 +8,10 @@ import spock.lang.*
 class QuoteControllerSpec extends Specification {
 
     def populateValidParams(params) {
+
         assert params != null
+        params["text"] = ’Hello’
 
-        // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
-
-
-        params["text"] = ’Some memorable words...’
-
-        assert false, "TODO: Provide a populateValidParams() implementation for this generated test suite"
     }
 
     void "Test the index action returns the correct model"() {

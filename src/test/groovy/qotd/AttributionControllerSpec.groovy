@@ -8,12 +8,10 @@ import spock.lang.*
 class AttributionControllerSpec extends Specification {
 
     def populateValidParams(params) {
+
         assert params != null
-
-
-        params["name"] = ’Anonymous’
-
-        assert false, "TODO: Provide a populateValidParams() implementation for this generated test suite"
+        params["name"] = 'Anonymous'
+            
     }
 
     void "Test the index action returns the correct model"() {

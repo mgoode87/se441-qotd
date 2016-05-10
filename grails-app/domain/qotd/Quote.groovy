@@ -3,9 +3,7 @@ package qotd
 class Quote {
     String text;
 
-    static belongsTo = [attribution: Attribution];
-
-    //Made a change
+    static belongsTo = [attribution:Attribution];
 
     static constraints = {
       text nullable: false

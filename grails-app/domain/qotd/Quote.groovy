@@ -7,6 +7,6 @@ class Quote {
 
     static constraints = {
       text nullable: false
-      attribution nullable: true
+      def attribution nullable: true
     }
 }

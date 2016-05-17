@@ -32,7 +32,7 @@ class QuoteSpec extends Specification {
     }
 
     def "test for null"(){
-      when 'test is null'
+      when: 'test is null'
       def n = new Quote(text: null)
       then: 'validation should fail'
       !n.validate()
@@ -41,7 +41,7 @@ class QuoteSpec extends Specification {
     def "test for valid text"(){
       when: 'test is valid text'
       def l = new Quote(text: 'Hello')
-      then: 'validate should pass'
+      then: 'validation should pass'
       !l.validate()
     }
 

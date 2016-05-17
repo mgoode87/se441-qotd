@@ -11,7 +11,7 @@ class AttributionControllerSpec extends Specification {
 
         assert params != null
         params["name"] = 'Anonymous'
-            
+
     }
 
     void "Test the index action returns the correct model"() {

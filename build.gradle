@@ -113,5 +113,5 @@ sonarqube {
 }
 
 compileGroovy {
-  targetCompatibility = ’1.8’
+  targetCompatibility = ’1.7’
 }

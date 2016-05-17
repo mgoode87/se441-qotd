@@ -17,7 +17,7 @@ class QuoteSpec extends Specification {
 
     def "test for valid quote text"() {
         when: 'text is empty'
-        def p = new Quote(text: ’’)
+        def p = new Quote(text: '')
         then: 'validation should fail'
         !p.validate()
     }

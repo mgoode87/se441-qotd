@@ -17,7 +17,7 @@ class AttributionSpec extends Specification {
 
     def "test for valid attribution name"() {
         when: 'name is empty'
-        def p = new Attribution(name: ’’)
+        def p = new Attribution(name: '')
         then: 'validation should fail'
         !p.validate()
     }

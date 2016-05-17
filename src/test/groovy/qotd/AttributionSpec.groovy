@@ -16,24 +16,24 @@ class AttributionSpec extends Specification {
     }
 
     def "test for valid attribution name"() {
-        when: ’name is empty’
+        when: 'name is empty'
         def p = new Attribution(name: ’’)
-        then: ’validation should fail’
+        then: 'validation should fail'
         !p.validate()
     }
 
     def "test for null"() {
-      when: ’name is null’
+      when: 'name is null'
       def p = new Attribution(name: null)
-      then: ’validation should fail’
+      then: 'validation should fail'
       !p.validate()
     }
 
     def "test for valid"() {
-      when: ’name is valid’
+      when: 'name is valid'
       def p = new Attribution(name: 'Anonymous')
-      then: ’validation should pass’
-      !p.validate()
+      then: 'validation should pass'
+      p.validate()
 
     }
 }

@@ -12,6 +12,9 @@ class QuoteSpec extends Specification {
     def setup() {
     }
 
+    def cleanup() {
+    }
+    
     def "test for valid quote text"() {
         when: ’text is empty’
         def p = new Quote(text: ’’)
@@ -33,19 +36,18 @@ class QuoteSpec extends Specification {
 
     def "test for null"(){
       when: 'test is null'
-      def n = new Quote(text: null)
+      def p = new Quote(text: null)
       then: 'validation should fail'
-      !n.validate()
+      !p.validate()
     }
 
     def "test for valid text"(){
       when: 'test is valid text'
-      def l = new Quote(text: 'Hello')
+      def p = new Quote(text: 'Hello')
       then: 'validation should pass'
-      !l.validate()
+      !p.validate()
     }
 
 
-    def cleanup() {
-    }
+
 }

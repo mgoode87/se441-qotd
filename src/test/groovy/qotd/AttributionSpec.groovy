@@ -20,16 +20,20 @@ class AttributionSpec extends Specification {
         def p = new Attribution(name: ’’)
         then: ’validation should fail’
         !p.validate()
+    }
 
-        when: ’name is null’
-        def n = new Attribution(name: null)
-        then: ’validation should fail’
-        !n.validate()
+    def "test for null"() {
+      when: ’name is null’
+      def p = new Attribution(name: null)
+      then: ’validation should fail’
+      !p.validate()
+    }
 
-        when: ’name is valid’
-        def l = new Attribution(name: 'Anonymous')
-        then: ’validation should pass’
-        !l.validate()
+    def "test for valid"() {
+      when: ’name is valid’
+      def p = new Attribution(name: 'Anonymous')
+      then: ’validation should pass’
+      !p.validate()
 
     }
 }

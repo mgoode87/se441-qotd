@@ -1,7 +1,6 @@
 package qotd
 
 import grails.test.mixin.*
-import grails.text.mixin.TestFor
 import spock.lang.*
 
 @TestFor(AttributionController)
